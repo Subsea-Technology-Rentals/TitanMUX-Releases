@@ -7,11 +7,11 @@
       "components": {
         "topside_gui": {
           "version": "v26.09.16",
-          "git_ref": "08de885ce60a00cd989805782d3d098b6bf1abe7"
+          "git_ref": "05af7dea2c61ebb66c6444c5ad2c71cd24a62392"
         },
         "web_portal": {
           "version": "v26.09.1",
-          "git_ref": "08de885ce60a00cd989805782d3d098b6bf1abe7"
+          "git_ref": "05af7dea2c61ebb66c6444c5ad2c71cd24a62392"
         },
         "CMB": {
           "version": "3.0.80",
