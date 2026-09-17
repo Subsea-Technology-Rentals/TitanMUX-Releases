@@ -1,5 +1,5 @@
 {
-  "latest": "SP-2026.08.1-dev",
+  "latest": "SP-2026.09.3-dev",
   "packages": {
     "SP-2026.04.1-dev": {
       "released": "2026-04-16",
@@ -900,6 +900,36 @@
         "PIC": {
           "version": "1.14",
           "tag": "PIC-v1.14"
+        }
+      }
+    },
+    "SP-2026.09.3-dev": {
+      "released": "2026-09-17",
+      "notes": "Software versions are read from the code's version stamp and checked against it (+modified if the code differs); update check also compares firmware; OS Update installs the channel's latest package. Same code and firmware as SP-2026.09.2-rc otherwise. GUI v26.09.16 / Web v26.09.1 kept on purpose - tell the builds apart by commit.",
+      "components": {
+        "CMB": {
+          "version": "3.0.80",
+          "tag": "CMB-v3.0.80"
+        },
+        "CMM": {
+          "version": "3.0.23",
+          "tag": "CMM-v3.0.23"
+        },
+        "CMB-TS": {
+          "version": "3.0.80",
+          "tag": "CMB-TS-v3.0.80"
+        },
+        "PIC": {
+          "version": "1.14",
+          "tag": "PIC-v1.14"
+        },
+        "topside_gui": {
+          "version": "v26.09.16",
+          "git_ref": "a868ebb17b12380678ea692085e6c10563035468"
+        },
+        "web_portal": {
+          "version": "v26.09.1",
+          "git_ref": "a868ebb17b12380678ea692085e6c10563035468"
         }
       }
     }
