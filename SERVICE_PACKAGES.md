@@ -20,7 +20,7 @@ The TitanMUX system is made up of the following independently versioned componen
 
 ### Version Scheme Details
 
-- **CalVer (GUI)**: `vYY.MM.CC` — year, month, and commit count within that month. Calculated at runtime from git history using path filters.
+- **CalVer (GUI)**: `vYY.MM.CC` — year, month, and commit count within that month. Calculated once, by the Release Manager, when a package is cut on the development channel, and stamped into `version_info.default.json` in MUX-GUI together with the commit it describes. Units read the stamp instead of calculating anything, and promotion carries it unchanged, so a build shows the same number on every channel.
 - **SemVer (Firmware)**: `MAJOR.MINOR.PATCH-suffix` where suffix is `stable`, `rc`, `alpha`, or `beta`.
 
 ## Service Package Versioning
@@ -29,7 +29,9 @@ Service packages use the format: **`SP-YYYY.MM.N`**
 
 - `YYYY` — year
 - `MM` — month (zero-padded)
-- `N` — sequential release number within that month
+- `N` — sequential release number within that month, shared by all channels
+
+The development and release-candidate manifests add `-dev` / `-rc`. A package keeps its number when promoted (`SP-2026.10.3-dev` → `SP-2026.10.3-rc` → `SP-2026.10.3`), so stable numbers can have gaps where an RC was never promoted. See `TitanMUX-Tools/docs/release-manager.md`.
 
 Example: `SP-2026.04.1` is the first service package released in April 2026.
 
@@ -148,8 +150,8 @@ class ServicePackageManager:
     def get_current_versions(self):
         """Collect installed versions of all components."""
         return {
-            "topside_gui": calculate_version_from_git("*.py"),
-            "web_portal": calculate_version_from_git("webgui/"),
+            "topside_gui": software_versions()["topside"],  # tracked stamp
+            "web_portal": software_versions()["web"],
             "CMM": self.get_device_firmware_version("CMM"),
             "CMB": self.get_device_firmware_version("CMB"),
             "CMB-TS": self.get_device_firmware_version("CMB-TS"),
