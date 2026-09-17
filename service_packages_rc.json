@@ -1,17 +1,17 @@
 {
-  "latest": "SP-2026.09.1-rc",
+  "latest": "SP-2026.09.2-rc",
   "packages": {
-    "SP-2026.09.1-rc": {
-      "released": "2026-09-04",
-      "notes": "Fleet reporting records both TitanMUX serial numbers (topside and subsea) with their MX- prefix",
+    "SP-2026.09.2-rc": {
+      "released": "2026-09-17",
+      "notes": "Renumbered from SP-2026.09.1-rc - no code or firmware change. Fleet reporting records both TitanMUX serial numbers (topside and subsea) with their MX- prefix",
       "components": {
         "topside_gui": {
           "version": "v26.09.16",
-          "git_ref": "05af7dea2c61ebb66c6444c5ad2c71cd24a62392"
+          "git_ref": "832eb1bee3986669ad269b6e6e87164bc1343a7c"
         },
         "web_portal": {
           "version": "v26.09.1",
-          "git_ref": "05af7dea2c61ebb66c6444c5ad2c71cd24a62392"
+          "git_ref": "832eb1bee3986669ad269b6e6e87164bc1343a7c"
         },
         "CMB": {
           "version": "3.0.80",
@@ -28,36 +28,6 @@
         "PIC": {
           "version": "1.14",
           "tag": "PIC-v1.14"
-        }
-      }
-    },
-    "SP-2026.09.2-rc": {
-      "released": "2026-09-16",
-      "notes": "Roll Back",
-      "components": {
-        "topside_gui": {
-          "version": "v26.09.16",
-          "git_ref": "10a11abe961ddb2edf19c1d23f135b169e8cd415"
-        },
-        "web_portal": {
-          "version": "v26.09.1",
-          "git_ref": "10a11abe961ddb2edf19c1d23f135b169e8cd415"
-        },
-        "CMB": {
-          "version": "3.0.48",
-          "tag": "CMB-v3.0.48"
-        },
-        "CMM": {
-          "version": "3.0.13",
-          "tag": "CMM-v3.0.13"
-        },
-        "CMB-TS": {
-          "version": "3.0.48",
-          "tag": "CMB-TS-v3.0.48"
-        },
-        "PIC": {
-          "version": "1.8",
-          "tag": "PIC-v1.8"
         }
       }
     }
