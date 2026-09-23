@@ -77,11 +77,6 @@ Do not keep pressing it.
    the whole system off and back on**, topside and bottle.
 6. Check the result — see *When it has finished* below.
 
-On an older unit (version v26.04.…) the saved setup — power, ethernet, serial
-and trigger settings, channel configuration and device profiles — goes back to
-defaults during this update. That is expected; set the unit up again
-afterwards. Units on v26.08 or later keep their setup.
-
 ---
 
 ## When it has finished
