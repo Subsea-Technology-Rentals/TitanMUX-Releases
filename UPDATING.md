@@ -48,16 +48,8 @@ These units update in two parts: the software first, then the service pack.
 
 1. **Settings → OS Update → Yes.**
 2. Wait for **Update successful**, then answer **Yes** to *Reboot now?*
-3. When the topside has restarted, go to **Settings → System Update**. The
-   updated software has this button in place of *OS Update*.
-4. Press **Check for Updates**. It should show
-   *Target Service Package: SP-2026.09.2*.
-5. Press **Install Selected Pack** and follow the screen.
-6. When it asks you to **power cycle the bottle**, do it, then let the update
-   finish. The topside restarts on its own.
-7. Wait for the dialog confirming the service pack is installed, then **power
-   the whole system off and back on**, topside and bottle.
-8. Check the result — see *When it has finished* below.
+3. When the topside has restarted, **continue with Route B**. The updated
+   software has a *System Update* button in place of *OS Update*.
 
 **If OS Update reports a failure, or it says it was successful but the Topside
 version on the Versions screen has not changed, stop and contact engineering.**
