@@ -15,6 +15,9 @@ terminal or a login.
 
 **Before you start**
 
+- **The topside and the subsea bottle must both be powered on and connected to
+  each other**, and stay that way. The bottle's boards are updated over that
+  link, so anything not powered and talking to the topside is skipped.
 - The topside must be connected to a network with internet access (the same
   connection used for normal updates).
 - Allow time to finish in one go. Do not switch the topside off part way
@@ -31,11 +34,7 @@ On the topside: **Settings**, and look at the buttons.
 | What you see on the Settings screen | Go to |
 | --- | --- |
 | An **OS Update** button | **Route A** |
-| **System Update**, and the version is **v26.04.…** | **Route B** |
-| **System Update**, and the version is **v26.08.…** or **v26.09.…** | **Route C** |
-
-To check the version: **Settings → Firmware/Software Versions**, and read
-**Topside** under *Software Versions*.
+| A **System Update** button | **Route B** |
 
 ---
 
@@ -45,8 +44,8 @@ These units update in two parts: the software first, then the service pack.
 
 1. **Settings → OS Update → Yes.**
 2. Wait for **Update successful**, then answer **Yes** to *Reboot now?*
-3. When the topside has restarted, go to **Settings → System Update**.
-   The button is where *OS Update* used to be.
+3. When the topside has restarted, go to **Settings → System Update**. The
+   updated software has this button in place of *OS Update*.
 4. Press **Check for Updates**. It should show
    *Target Service Package: SP-2026.09.2*.
 5. Press **Install Selected Pack** and follow the screen.
@@ -54,37 +53,13 @@ These units update in two parts: the software first, then the service pack.
    finish. The topside restarts on its own.
 7. Check the result — see *When it has finished* below.
 
-Your settings and saved device profiles are kept.
-
 **If OS Update reports a failure, or it says it was successful but the Topside
 version on the Versions screen has not changed, stop and contact engineering.**
 Do not keep pressing it.
 
 ---
 
-## Route B — April units (v26.04.…, no OS Update button)
-
-**Contact engineering before you update this unit.**
-
-Updating from this software version wipes the unit's saved setup — power,
-ethernet, serial and trigger settings, channel configuration and saved device
-profiles all go back to factory defaults, and the update still reports that it
-succeeded. Engineering can save the setup first; from the topside screen alone
-there is no way to keep it.
-
-If you have been told to go ahead anyway, first write down or photograph:
-
-- Config Page
-- Network Settings
-- Ground Fault Settings
-- any serial, trigger and power settings you rely on
-- your saved device profiles
-
-Then follow **Route C**, and put the settings back afterwards.
-
----
-
-## Route C — current units (Settings has System Update)
+## Route B — units with a System Update button
 
 1. **Settings → System Update.**
 2. Press **Check for Updates**. It should show
@@ -92,8 +67,12 @@ Then follow **Route C**, and put the settings back afterwards.
 3. Press **Install Selected Pack** and follow the screen.
 4. When it asks you to **power cycle the bottle**, do it, then let the update
    finish. The topside restarts on its own.
+5. Check the result — see *When it has finished* below.
 
-Your settings and saved device profiles are kept.
+On an older unit (version v26.04.…) the saved setup — power, ethernet, serial
+and trigger settings, channel configuration and device profiles — goes back to
+defaults during this update. That is expected; set the unit up again
+afterwards. Units on v26.08 or later keep their setup.
 
 ---
 
@@ -121,6 +100,5 @@ outstanding.
 | The update finished but a board still shows old firmware | Power cycle the bottle, then **Check for Updates** again. |
 | *Installed Service Package* still shows the old pack | Open **System Update** once more; it corrects itself. If not, contact engineering. |
 
-Nothing in this update changes how the unit runs subsea. If you have to stop
-part way through, leave the unit powered and contact engineering rather than
-starting again.
+If you have to stop part way through, leave the unit powered and contact
+engineering rather than starting again.
