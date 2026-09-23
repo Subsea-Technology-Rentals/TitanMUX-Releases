@@ -31,7 +31,7 @@ components**
 
 ---
 
-## Step 1 — Which route does your unit take?
+## Step 1: Which route does your unit take?
 
 On the topside: **Settings**, and look at the buttons.
 
@@ -42,7 +42,7 @@ On the topside: **Settings**, and look at the buttons.
 
 ---
 
-## Route A — older units (Settings has an OS Update button)
+## Route A: older units (Settings has an OS Update button)
 
 These units update in two parts: the software first, then the service pack.
 
@@ -57,7 +57,7 @@ Do not keep pressing it.
 
 ---
 
-## Route B — units with a System Update button
+## Route B: units with a System Update button
 
 1. **Settings → System Update.**
 2. Press **Check for Updates**. It should show
@@ -67,7 +67,7 @@ Do not keep pressing it.
    finish. The topside restarts on its own.
 5. Wait for the dialog confirming the service pack is installed, then **power
    the whole system off and back on**, topside and bottle.
-6. Check the result — see *When it has finished* below.
+6. Check the result, as described in *When it has finished* below.
 
 ---
 
@@ -82,7 +82,7 @@ After the full power cycle, check all three:
 - The same screen shows CMB and CMB-TS **3.0.80**, CMM **3.0.23**, PIC **1.14**.
 
 If a firmware version is still the old one, power cycle the bottle and run
-**Check for Updates** again — the update page will offer whatever is still
+**Check for Updates** again. The update page will offer whatever is still
 outstanding.
 
 ---
