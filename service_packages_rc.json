@@ -1,5 +1,5 @@
 {
-  "latest": "SP-2026.09.2-rc",
+  "latest": "SP-2026.09.3-rc",
   "packages": {
     "SP-2026.09.2-rc": {
       "released": "2026-09-17",
@@ -28,6 +28,36 @@
         "PIC": {
           "version": "1.14",
           "tag": "PIC-v1.14"
+        }
+      }
+    },
+    "SP-2026.09.3-rc": {
+      "released": "2026-09-23",
+      "notes": "Promoted from SP-2026.09.3-dev. Software and web portal versions are now read from the version stamp held in the code itself rather than counted on the unit, so a build reports the same numbers on every channel. The update check also compares board firmware, and the OS Update button installs the commit the channel's latest service package names. No change to the GUI, web portal or firmware versions in SP-2026.09.2.",
+      "components": {
+        "CMB": {
+          "version": "3.0.80",
+          "tag": "CMB-v3.0.80"
+        },
+        "CMM": {
+          "version": "3.0.23",
+          "tag": "CMM-v3.0.23"
+        },
+        "CMB-TS": {
+          "version": "3.0.80",
+          "tag": "CMB-TS-v3.0.80"
+        },
+        "PIC": {
+          "version": "1.14",
+          "tag": "PIC-v1.14"
+        },
+        "topside_gui": {
+          "version": "v26.09.16",
+          "git_ref": "a868ebb17b12380678ea692085e6c10563035468"
+        },
+        "web_portal": {
+          "version": "v26.09.1",
+          "git_ref": "a868ebb17b12380678ea692085e6c10563035468"
         }
       }
     }
