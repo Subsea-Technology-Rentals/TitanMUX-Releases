@@ -24,6 +24,9 @@ terminal or a login.
   through, and leave the network plugged in.
 - You will be asked to power cycle the subsea bottle once during the update,
   and the topside restarts at the end.
+- **When the dialog confirms the service pack is installed, power the whole
+  system off and back on** - topside and bottle together - before using the
+  unit or checking the versions.
 
 ---
 
@@ -51,7 +54,9 @@ These units update in two parts: the software first, then the service pack.
 5. Press **Install Selected Pack** and follow the screen.
 6. When it asks you to **power cycle the bottle**, do it, then let the update
    finish. The topside restarts on its own.
-7. Check the result — see *When it has finished* below.
+7. Wait for the dialog confirming the service pack is installed, then **power
+   the whole system off and back on**, topside and bottle.
+8. Check the result — see *When it has finished* below.
 
 **If OS Update reports a failure, or it says it was successful but the Topside
 version on the Versions screen has not changed, stop and contact engineering.**
@@ -67,7 +72,9 @@ Do not keep pressing it.
 3. Press **Install Selected Pack** and follow the screen.
 4. When it asks you to **power cycle the bottle**, do it, then let the update
    finish. The topside restarts on its own.
-5. Check the result — see *When it has finished* below.
+5. Wait for the dialog confirming the service pack is installed, then **power
+   the whole system off and back on**, topside and bottle.
+6. Check the result — see *When it has finished* below.
 
 On an older unit (version v26.04.…) the saved setup — power, ethernet, serial
 and trigger settings, channel configuration and device profiles — goes back to
@@ -78,7 +85,7 @@ afterwards. Units on v26.08 or later keep their setup.
 
 ## When it has finished
 
-Check all three:
+After the full power cycle, check all three:
 
 - **Settings → System Update** shows *Installed Service Package:
   **SP-2026.09.2***.
