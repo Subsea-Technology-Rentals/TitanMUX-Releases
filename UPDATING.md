@@ -3,9 +3,10 @@
 Everything here is done on the topside screen. You do not need a laptop, a
 terminal or a login.
 
-**This update installs**
+**This update installs Service Pack SP-2026.09.2, containing the following
+components**
 
-| Part | Version |
+| Component | Version |
 | --- | --- |
 | Topside GUI | v26.09.16 |
 | Web portal | v26.09.1 |
