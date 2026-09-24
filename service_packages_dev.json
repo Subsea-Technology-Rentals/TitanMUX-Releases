@@ -1,5 +1,5 @@
 {
-  "latest": "SP-2026.09.4-dev",
+  "latest": "SP-2026.09.5-dev",
   "packages": {
     "SP-2026.04.1-dev": {
       "released": "2026-04-16",
@@ -990,6 +990,36 @@
         "PIC": {
           "version": "1.8",
           "tag": "PIC-v1.8"
+        }
+      }
+    },
+    "SP-2026.09.5-dev": {
+      "released": "2026-09-24",
+      "notes": "Recovery build. Adds a Recover Boards button to the System Update page for comms boards left in their bootloader by a failed firmware transfer: they no longer report, so the normal update cannot see or retry them. Each candidate address is probed and reflashed one at a time, comms modules before the motherboards. Firmware is the same as SP-2026.09.2.",
+      "components": {
+        "CMB": {
+          "version": "3.0.80",
+          "tag": "CMB-v3.0.80"
+        },
+        "CMM": {
+          "version": "3.0.23",
+          "tag": "CMM-v3.0.23"
+        },
+        "CMB-TS": {
+          "version": "3.0.80",
+          "tag": "CMB-TS-v3.0.80"
+        },
+        "PIC": {
+          "version": "1.14",
+          "tag": "PIC-v1.14"
+        },
+        "topside_gui": {
+          "version": "v26.09.18",
+          "git_ref": "0da96846ff52bc8256eb637ab4d92a74f8be825a"
+        },
+        "web_portal": {
+          "version": "v26.09.1",
+          "git_ref": "0da96846ff52bc8256eb637ab4d92a74f8be825a"
         }
       }
     }
