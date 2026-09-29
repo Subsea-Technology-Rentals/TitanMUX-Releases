@@ -1,5 +1,5 @@
 {
-  "latest": "SP-2026.09.4-dev",
+  "latest": "SP-2026.09.3-dev",
   "packages": {
     "SP-2026.04.5-dev": {
       "released": "2026-04-20",
@@ -826,12 +826,12 @@
       "notes": "Updated TFTP Timeout",
       "components": {
         "topside_gui": {
-          "version": "v26.09.19",
-          "git_ref": "034a7f17a54162d839d57319bfe057a7e6f2623e"
+          "version": "v26.09.20",
+          "git_ref": "1ad89b9f2eff5a1d815908dd8f8ff6cb5eb76783"
         },
         "web_portal": {
-          "version": "v26.09.1",
-          "git_ref": "034a7f17a54162d839d57319bfe057a7e6f2623e"
+          "version": "v26.09.2",
+          "git_ref": "1ad89b9f2eff5a1d815908dd8f8ff6cb5eb76783"
         },
         "CMB": {
           "version": "3.0.80",
