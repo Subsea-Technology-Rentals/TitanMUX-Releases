@@ -1,118 +1,6 @@
 {
-  "latest": "SP-2026.09.5-dev",
+  "latest": "SP-2026.09.3-dev",
   "packages": {
-    "SP-2026.04.1-dev": {
-      "released": "2026-04-16",
-      "notes": "Development service package",
-      "components": {
-        "topside_gui": {
-          "version": "v26.04.18",
-          "git_ref": "72b45b6baeab3e1d3c8cdee895bf9bddbcc63be5"
-        },
-        "web_portal": {
-          "version": "v26.04.18",
-          "git_ref": "72b45b6baeab3e1d3c8cdee895bf9bddbcc63be5"
-        },
-        "CMB": {
-          "version": "3.0.44-beta",
-          "tag": "CMB-v3.0.44-beta"
-        },
-        "CMM": {
-          "version": "3.0.12-rc",
-          "tag": "CMM-v3.0.12-rc"
-        },
-        "CMB-TS": {
-          "version": "3.0.44-stable",
-          "tag": "CMB-TS-v3.0.44-stable"
-        }
-      }
-    },
-    "SP-2026.04.2-dev": {
-      "released": "2026-04-16",
-      "notes": "Development service package",
-      "components": {
-        "topside_gui": {
-          "version": "v26.04.21",
-          "git_ref": "7d67b8e6d432331c6f9c4d111dee7532940a21c5"
-        },
-        "web_portal": {
-          "version": "v26.04.21",
-          "git_ref": "7d67b8e6d432331c6f9c4d111dee7532940a21c5"
-        },
-        "CMB": {
-          "version": "3.0.44-stable",
-          "tag": "CMB-v3.0.44-stable"
-        },
-        "CMM": {
-          "version": "3.0.12-stable",
-          "tag": "CMM-v3.0.12-stable"
-        },
-        "CMB-TS": {
-          "version": "3.0.44-stable",
-          "tag": "CMB-TS-v3.0.44-stable"
-        }
-      }
-    },
-    "SP-2026.04.3-dev": {
-      "released": "2026-04-16",
-      "notes": "Remote PIC Updates",
-      "components": {
-        "topside_gui": {
-          "version": "v26.04.24",
-          "git_ref": "bd0bb7b33b1333692dc9d1c6b67513b93d2427e5"
-        },
-        "web_portal": {
-          "version": "v26.04.24",
-          "git_ref": "bd0bb7b33b1333692dc9d1c6b67513b93d2427e5"
-        },
-        "CMB": {
-          "version": "3.0.45-rc",
-          "tag": "CMB-v3.0.45-rc"
-        },
-        "CMM": {
-          "version": "3.0.12-stable",
-          "tag": "CMM-v3.0.12-stable"
-        },
-        "CMB-TS": {
-          "version": "3.0.44-stable",
-          "tag": "CMB-TS-v3.0.44-stable"
-        },
-        "PIC": {
-          "version": "1.10",
-          "tag": "PIC-v1.10"
-        }
-      }
-    },
-    "SP-2026.04.4-dev": {
-      "released": "2026-04-20",
-      "notes": "Update Notifications and PIC System Updates",
-      "components": {
-        "topside_gui": {
-          "version": "v26.04.27",
-          "git_ref": "1fac12df4d5017d90221d55e5e7c661824f676b3"
-        },
-        "web_portal": {
-          "version": "v26.04.27",
-          "git_ref": "1fac12df4d5017d90221d55e5e7c661824f676b3"
-        },
-        "CMB": {
-          "version": "3.0.48-rc",
-          "tag": "CMB-v3.0.48-rc"
-        },
-        "CMM": {
-          "version": "3.0.12-stable",
-          "tag": "CMM-v3.0.12-stable"
-        },
-        "CMB-TS": {
-          "version": "3.0.44-stable",
-          "tag": "CMB-TS-v3.0.44-stable"
-        },
-        "PIC": {
-          "version": "1.7",
-          "tag": "PIC-v1.7"
-        }
-      }
-    },
     "SP-2026.04.5-dev": {
       "released": "2026-04-20",
       "notes": "Parallel firmware updates for same board type",
@@ -903,36 +791,6 @@
         }
       }
     },
-    "SP-2026.09.3-dev": {
-      "released": "2026-09-17",
-      "notes": "Software versions are read from the code's version stamp and checked against it (+modified if the code differs); update check also compares firmware; OS Update installs the channel's latest package. Same code and firmware as SP-2026.09.2-rc otherwise. GUI v26.09.16 / Web v26.09.1 kept on purpose - tell the builds apart by commit.",
-      "components": {
-        "CMB": {
-          "version": "3.0.80",
-          "tag": "CMB-v3.0.80"
-        },
-        "CMM": {
-          "version": "3.0.23",
-          "tag": "CMM-v3.0.23"
-        },
-        "CMB-TS": {
-          "version": "3.0.80",
-          "tag": "CMB-TS-v3.0.80"
-        },
-        "PIC": {
-          "version": "1.14",
-          "tag": "PIC-v1.14"
-        },
-        "topside_gui": {
-          "version": "v26.09.16",
-          "git_ref": "a868ebb17b12380678ea692085e6c10563035468"
-        },
-        "web_portal": {
-          "version": "v26.09.1",
-          "git_ref": "a868ebb17b12380678ea692085e6c10563035468"
-        }
-      }
-    },
     "SP-2026.09.2-dev": {
       "released": "2026-09-17",
       "notes": "Software versions are read from the code's version stamp and checked against it (+modified if the code differs); update check also compares firmware; OS Update installs the channel's latest package. Same code and firmware as SP-2026.09.2-rc otherwise. GUI v26.09.16 / Web v26.09.1 kept on purpose - tell the builds apart by commit.",
@@ -963,40 +821,18 @@
         }
       }
     },
-    "SP-2026.09.4-dev": {
-      "released": "2026-09-21",
-      "notes": "",
+    "SP-2026.09.3-dev": {
+      "released": "2026-09-29",
+      "notes": "Updated TFTP Timeout",
       "components": {
         "topside_gui": {
-          "version": "v26.09.16",
-          "git_ref": "a868ebb17b12380678ea692085e6c10563035468"
+          "version": "v26.09.19",
+          "git_ref": "034a7f17a54162d839d57319bfe057a7e6f2623e"
         },
         "web_portal": {
           "version": "v26.09.1",
-          "git_ref": "a868ebb17b12380678ea692085e6c10563035468"
+          "git_ref": "034a7f17a54162d839d57319bfe057a7e6f2623e"
         },
-        "CMB": {
-          "version": "3.0.48",
-          "tag": "CMB-v3.0.48"
-        },
-        "CMM": {
-          "version": "3.0.13",
-          "tag": "CMM-v3.0.13"
-        },
-        "CMB-TS": {
-          "version": "3.0.48",
-          "tag": "CMB-TS-v3.0.48"
-        },
-        "PIC": {
-          "version": "1.8",
-          "tag": "PIC-v1.8"
-        }
-      }
-    },
-    "SP-2026.09.5-dev": {
-      "released": "2026-09-24",
-      "notes": "Recovery build. Adds a Recover Boards button to the System Update page for comms boards left in their bootloader by a failed firmware transfer: they no longer report, so the normal update cannot see or retry them. Each candidate address is probed and reflashed one at a time, comms modules before the motherboards. Firmware is the same as SP-2026.09.2.",
-      "components": {
         "CMB": {
           "version": "3.0.80",
           "tag": "CMB-v3.0.80"
@@ -1012,14 +848,6 @@
         "PIC": {
           "version": "1.14",
           "tag": "PIC-v1.14"
-        },
-        "topside_gui": {
-          "version": "v26.09.18",
-          "git_ref": "0da96846ff52bc8256eb637ab4d92a74f8be825a"
-        },
-        "web_portal": {
-          "version": "v26.09.1",
-          "git_ref": "0da96846ff52bc8256eb637ab4d92a74f8be825a"
         }
       }
     }
