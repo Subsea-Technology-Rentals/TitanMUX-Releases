@@ -73,9 +73,17 @@
           "version": "v26.09.2",
           "git_ref": "2eee7037e3428547fcbb73c2b136b05e2301f181"
         },
+        "CMB": {
+          "version": "3.0.48",
+          "tag": "CMB-v3.0.48"
+        },
         "CMM": {
           "version": "3.0.13",
           "tag": "CMM-v3.0.13"
+        },
+        "CMB-TS": {
+          "version": "3.0.48",
+          "tag": "CMB-TS-v3.0.48"
         }
       }
     },
