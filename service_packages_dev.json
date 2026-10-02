@@ -1,5 +1,5 @@
 {
-  "latest": "SP-2026.09.3-dev",
+  "latest": "SP-2026.10.1-dev",
   "packages": {
     "SP-2026.09.2-dev": {
       "released": "2026-09-17",
@@ -84,6 +84,20 @@
         "CMB-TS": {
           "version": "3.0.48",
           "tag": "CMB-TS-v3.0.48"
+        }
+      }
+    },
+    "SP-2026.10.1-dev": {
+      "released": "2026-10-02",
+      "notes": "",
+      "components": {
+        "topside_gui": {
+          "version": "v26.10.6",
+          "git_ref": "2eee7037e3428547fcbb73c2b136b05e2301f181"
+        },
+        "web_portal": {
+          "version": "v26.09.2",
+          "git_ref": "2eee7037e3428547fcbb73c2b136b05e2301f181"
         }
       }
     }
