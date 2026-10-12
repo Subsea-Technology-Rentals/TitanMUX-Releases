@@ -1,5 +1,5 @@
 {
-  "latest": "SP-2026.10.1-dev",
+  "latest": "SP-2026.10.2-dev",
   "packages": {
     "SP-2026.09.2-dev": {
       "released": "2026-09-17",
@@ -98,6 +98,24 @@
         "web_portal": {
           "version": "v26.10.2",
           "git_ref": "de9aa02403ce5f2baaf9c394ad480345fa763911"
+        }
+      }
+    },
+    "SP-2026.10.2-dev": {
+      "released": "2026-10-12",
+      "notes": "Low Power and Clock CMM",
+      "components": {
+        "topside_gui": {
+          "version": "v26.10.8",
+          "git_ref": "de9aa02403ce5f2baaf9c394ad480345fa763911"
+        },
+        "web_portal": {
+          "version": "v26.10.2",
+          "git_ref": "de9aa02403ce5f2baaf9c394ad480345fa763911"
+        },
+        "CMM": {
+          "version": "3.0.25-beta",
+          "tag": "CMM-v3.0.25-beta"
         }
       }
     }
