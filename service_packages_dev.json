@@ -92,12 +92,12 @@
       "notes": "",
       "components": {
         "topside_gui": {
-          "version": "v26.10.6",
-          "git_ref": "2eee7037e3428547fcbb73c2b136b05e2301f181"
+          "version": "v26.10.8",
+          "git_ref": "de9aa02403ce5f2baaf9c394ad480345fa763911"
         },
         "web_portal": {
-          "version": "v26.09.2",
-          "git_ref": "2eee7037e3428547fcbb73c2b136b05e2301f181"
+          "version": "v26.10.2",
+          "git_ref": "de9aa02403ce5f2baaf9c394ad480345fa763911"
         }
       }
     }
