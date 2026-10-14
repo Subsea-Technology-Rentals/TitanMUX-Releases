@@ -17,6 +17,7 @@ The TitanMUX system is made up of the following independently versioned componen
 | **CMB Firmware** | SemVer (`X.Y.Z-suffix`) | [MUX-Firmware-Release-CMB](https://github.com/Subsea-Technology-Rentals/MUX-Firmware-Release-CMB) | GitHub release download → TFTP upload |
 | **CMM Firmware** | SemVer (`X.Y.Z-suffix`) | [MUX-Firmware-Release-CMM](https://github.com/Subsea-Technology-Rentals/MUX-Firmware-Release-CMM) | GitHub release download → TFTP upload |
 | **CMB-TS Firmware** | SemVer (`X.Y.Z-suffix`) | [MUX-Firmware-Release-CMB-TS](https://github.com/Subsea-Technology-Rentals/MUX-Firmware-Release-CMB-TS) | GitHub release download → TFTP upload |
+| **IAP (bootloader)** | SemVer (`X.Y.Z-suffix`), one version for all three boards | [MUX-Firmware-Release-IAP](https://github.com/Subsea-Technology-Rentals/MUX-Firmware-Release-IAP) | GitHub release download → TFTP to the board's *application* (port 6969), which installs it |
 
 ### Version Scheme Details
 
@@ -66,6 +67,10 @@ The source of truth is [`service_packages.json`](service_packages.json) in this 
         "CMB-TS": {
           "version": "2.1.0-stable",
           "tag": "CMB-TS-v2.1.0-stable"
+        },
+        "IAP": {
+          "version": "3.1.0",
+          "tag": "IAP-v3.1.0"
         }
       }
     }
@@ -112,6 +117,32 @@ When a user presses **"Update All"** in the GUI:
    - **GUI/Web Portal**: `git fetch origin` then `git reset --hard <git_ref>` in the MUX-GUI repo.
    - **Firmware**: Downloads the tagged release `.bin` from the corresponding firmware release repo, then uploads via TFTP using the existing pipeline (SHA256 download verification → TFTP transfer → CRC32 post-upload check).
 4. After all updates complete, the SP version is stored locally so the dashboard can display the current system version.
+
+### Bootloader (IAP) Updates
+
+The IAP release holds one image per board (`CMM-IAP-v3.1.0.bin`,
+`CMB-IAP-v3.1.0.bin`, `CMB-TS-IAP-v3.1.0.bin`). The bootloader cannot replace
+itself, so the board's application does it: the unit sends the image to the
+running application, which checks it (CRC, image header, board type), and only
+after the unit confirms the CRC rewrites the bootloader and verifies it. The
+application keeps running throughout.
+
+Boards report their bootloader in device info: `iap_version` from the IAP's
+image header (3.1.0 and later), and `iap_crc32`, a fingerprint used to name
+older IAPs. Only applications that can install an IAP report `iap_version`, so
+a board without it needs its application updated first. That makes the update
+two-stage for older boards, and the unit handles it in one run:
+
+1. Application firmware is flashed (CMM, CMB, CMB-TS as usual).
+2. The operator power cycles the bottle (CMB-TS has its own rail cycled), so
+   the boards start the new application.
+3. Each board's bootloader is installed through that application, one board
+   at a time.
+
+Topside comms modules only start a new application at the restart at the end
+of the run, so their bootloader is installed on the next run. A package that
+pins an IAP must therefore pin application firmware that can install it.
+Bootloaders are never rolled back.
 
 ### Partial Updates
 
