@@ -1,5 +1,5 @@
 {
-  "latest": "SP-2026.10.3-dev",
+  "latest": "SP-2026.10.4-dev",
   "packages": {
     "SP-2026.09.2-dev": {
       "released": "2026-09-17",
@@ -134,6 +134,40 @@
         "CMM": {
           "version": "3.0.27-beta",
           "tag": "CMM-v3.0.27-beta"
+        }
+      }
+    },
+    "SP-2026.10.4-dev": {
+      "released": "2026-10-15",
+      "notes": "IAP Update Test 1",
+      "components": {
+        "topside_gui": {
+          "version": "v26.10.9",
+          "git_ref": "d5a5f6d370d5d3925eccc76e4d4877379e9251cc"
+        },
+        "web_portal": {
+          "version": "v26.10.2",
+          "git_ref": "d5a5f6d370d5d3925eccc76e4d4877379e9251cc"
+        },
+        "CMB": {
+          "version": "3.0.81-rc",
+          "tag": "CMB-v3.0.81-rc"
+        },
+        "CMM": {
+          "version": "3.0.28-rc",
+          "tag": "CMM-v3.0.28-rc"
+        },
+        "CMB-TS": {
+          "version": "3.0.81-rc",
+          "tag": "CMB-TS-v3.0.81-rc"
+        },
+        "PIC": {
+          "version": "1.14",
+          "tag": "PIC-v1.14"
+        },
+        "IAP": {
+          "version": "3.1.0",
+          "tag": "IAP-v3.1.0"
         }
       }
     }
