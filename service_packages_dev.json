@@ -1,5 +1,5 @@
 {
-  "latest": "SP-2026.10.4-dev",
+  "latest": "SP-2026.10.5-dev",
   "packages": {
     "SP-2026.09.2-dev": {
       "released": "2026-09-17",
@@ -168,6 +168,40 @@
         "IAP": {
           "version": "3.1.0",
           "tag": "IAP-v3.1.0"
+        }
+      }
+    },
+    "SP-2026.10.5-dev": {
+      "released": "2026-10-16",
+      "notes": "improved tftp stability",
+      "components": {
+        "topside_gui": {
+          "version": "v26.10.10",
+          "git_ref": "43015a77509a3904da15de934c455d9ec4165c88"
+        },
+        "web_portal": {
+          "version": "v26.10.2",
+          "git_ref": "43015a77509a3904da15de934c455d9ec4165c88"
+        },
+        "CMB": {
+          "version": "3.0.82-rc",
+          "tag": "CMB-v3.0.82-rc"
+        },
+        "CMM": {
+          "version": "3.0.29-rc",
+          "tag": "CMM-v3.0.29-rc"
+        },
+        "CMB-TS": {
+          "version": "3.0.82-rc",
+          "tag": "CMB-TS-v3.0.82-rc"
+        },
+        "PIC": {
+          "version": "1.14",
+          "tag": "PIC-v1.14"
+        },
+        "IAP": {
+          "version": "3.1.2",
+          "tag": "IAP-v3.1.2"
         }
       }
     }
