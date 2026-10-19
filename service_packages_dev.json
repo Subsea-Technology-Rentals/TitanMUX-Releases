@@ -1,5 +1,5 @@
 {
-  "latest": "SP-2026.10.4-dev",
+  "latest": "SP-2026.10.3-dev",
   "packages": {
     "SP-2026.10.4-dev": {
       "released": "2026-10-15",
@@ -74,12 +74,12 @@
       "notes": "",
       "components": {
         "topside_gui": {
-          "version": "v26.10.10",
-          "git_ref": "43015a77509a3904da15de934c455d9ec4165c88"
+          "version": "v26.10.11",
+          "git_ref": "0b66aebedd406f0959ccd5866fd73b633e750a7d"
         },
         "web_portal": {
           "version": "v26.10.2",
-          "git_ref": "43015a77509a3904da15de934c455d9ec4165c88"
+          "git_ref": "0b66aebedd406f0959ccd5866fd73b633e750a7d"
         },
         "CMB": {
           "version": "3.0.80",
