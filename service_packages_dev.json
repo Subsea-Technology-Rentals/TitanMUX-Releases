@@ -1,17 +1,17 @@
 {
-  "latest": "SP-2026.10.5-dev",
+  "latest": "SP-2026.10.4-dev",
   "packages": {
     "SP-2026.10.4-dev": {
       "released": "2026-10-15",
       "notes": "IAP Update Test 1",
       "components": {
         "topside_gui": {
-          "version": "v26.10.9",
-          "git_ref": "d5a5f6d370d5d3925eccc76e4d4877379e9251cc"
+          "version": "v26.10.11",
+          "git_ref": "0b66aebedd406f0959ccd5866fd73b633e750a7d"
         },
         "web_portal": {
           "version": "v26.10.2",
-          "git_ref": "d5a5f6d370d5d3925eccc76e4d4877379e9251cc"
+          "git_ref": "0b66aebedd406f0959ccd5866fd73b633e750a7d"
         },
         "CMB": {
           "version": "3.0.82-rc",
