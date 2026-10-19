@@ -40,24 +40,24 @@
       "notes": "improved tftp stability",
       "components": {
         "topside_gui": {
-          "version": "v26.10.11",
-          "git_ref": "0b66aebedd406f0959ccd5866fd73b633e750a7d"
+          "version": "v26.10.13",
+          "git_ref": "1b9e47f7a3fe6f9e0572b8e80e275d49fde22764"
         },
         "web_portal": {
           "version": "v26.10.2",
-          "git_ref": "0b66aebedd406f0959ccd5866fd73b633e750a7d"
+          "git_ref": "1b9e47f7a3fe6f9e0572b8e80e275d49fde22764"
         },
         "CMB": {
-          "version": "3.0.82-rc",
-          "tag": "CMB-v3.0.82-rc"
+          "version": "3.0.83-rc",
+          "tag": "CMB-v3.0.83-rc"
         },
         "CMM": {
-          "version": "3.0.29-rc",
-          "tag": "CMM-v3.0.29-rc"
+          "version": "3.0.30-rc",
+          "tag": "CMM-v3.0.30-rc"
         },
         "CMB-TS": {
-          "version": "3.0.82-rc",
-          "tag": "CMB-TS-v3.0.82-rc"
+          "version": "3.0.83-rc",
+          "tag": "CMB-TS-v3.0.83-rc"
         },
         "PIC": {
           "version": "1.14",
