@@ -1,5 +1,5 @@
 {
-  "latest": "SP-2026.10.5-dev",
+  "latest": "SP-2026.10.4-dev",
   "packages": {
     "SP-2026.10.4-dev": {
       "released": "2026-10-15",
@@ -30,8 +30,8 @@
           "tag": "PIC-v1.14"
         },
         "IAP": {
-          "version": "3.0.4-rc",
-          "tag": "IAP-v3.0.4-rc"
+          "version": "3.1.2",
+          "tag": "IAP-v3.1.2"
         }
       }
     },
