@@ -40,12 +40,12 @@
       "notes": "improved tftp stability",
       "components": {
         "topside_gui": {
-          "version": "v26.10.13",
-          "git_ref": "1b9e47f7a3fe6f9e0572b8e80e275d49fde22764"
+          "version": "v26.11.1",
+          "git_ref": "92523b6477e9b6588e26b8de6b5623fbfa62383a"
         },
         "web_portal": {
           "version": "v26.10.2",
-          "git_ref": "1b9e47f7a3fe6f9e0572b8e80e275d49fde22764"
+          "git_ref": "92523b6477e9b6588e26b8de6b5623fbfa62383a"
         },
         "CMB": {
           "version": "3.0.84-rc",
