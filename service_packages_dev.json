@@ -36,16 +36,16 @@
       }
     },
     "SP-2026.10.5-dev": {
-      "released": "2026-10-16",
-      "notes": "improved tftp stability",
+      "released": "2026-11-13",
+      "notes": "Improved TFTP stability; GUI v26.11.2 restores CRC-verified IAP board recovery and updates branch switching to the fetched channel tip. Recover comms modules before confirming motherboard recovery.",
       "components": {
         "topside_gui": {
-          "version": "v26.11.1",
-          "git_ref": "92523b6477e9b6588e26b8de6b5623fbfa62383a"
+          "version": "v26.11.2",
+          "git_ref": "e43c32642e33d0e94ac201c065b1aa60032b1787"
         },
         "web_portal": {
           "version": "v26.10.2",
-          "git_ref": "92523b6477e9b6588e26b8de6b5623fbfa62383a"
+          "git_ref": "e43c32642e33d0e94ac201c065b1aa60032b1787"
         },
         "CMB": {
           "version": "3.0.84-rc",
