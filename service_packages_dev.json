@@ -41,11 +41,11 @@
       "components": {
         "topside_gui": {
           "version": "v26.11.1",
-          "git_ref": "fcda5a697da18f8c89964d6f04aabe1462764fc7"
+          "git_ref": "882de7bd64dfde28624f2d28f70912c57aa7b797"
         },
         "web_portal": {
           "version": "v26.10.2",
-          "git_ref": "fcda5a697da18f8c89964d6f04aabe1462764fc7"
+          "git_ref": "882de7bd64dfde28624f2d28f70912c57aa7b797"
         },
         "CMB": {
           "version": "3.0.84-rc",
